@@ -1,0 +1,690 @@
+{
+  "intents": [{
+          "tag": "greetings",
+          "patterns": ["hi", "hello","haroo","yaw","wassup", "hi", "hey", "holla", "hello"],
+          "responses": ["hello, terima kasih sudah menyapaku", "hi, ada yang bisa dibantu?"],
+          "context": [""]
+      },
+      {
+          "tag": "goodbye",
+          "patterns": ["bye", "good bye", "see you later", "sampai jumpa"],
+          "responses": ["have a nice time, welcome back again", "sampai jumpa"],
+          "context": [""]
+      },
+      {
+          "tag": "terima kasih",
+          "patterns": ["terima kasih", "okay","Thank you","thankyou", "sangat membantu", "keren, terima kasih", "terima kasih sudah membantu", "wow", "keren"],
+          "responses": ["senang bisa membantumu!", "Any time!","you're welcome", "My pleasure"],
+          "context": [""]
+      },
+      {
+          "tag": "tidak ada jawaban",
+          "patterns": [""],
+          "responses": ["maaf, saya tidak mengerti maksudmu", "silakan masukan info lebih detail", "saya tidak yakin dengan itu"],
+          "context": [""]
+      },
+      {
+          "tag": "nama1",
+          "patterns": ["siapa namammu?","kamu siapa?", "nama kamu siapa"],
+          "responses": ["I'm just a chat agent. I only exist in the internet","I'm a KCA chat agent"],
+          "context": [""]
+      },
+      {
+          "tag": "nama",
+          "patterns": ["nama saya ", "saya"],
+          "responses": ["Oooh senang berinteraksi denganmu {n}. Bagaimana saya akan membantumu? {n}", "Oh, baik. Saya akan mengingatnya {n}"],
+          "context": [""]
+      },
+  {
+          "tag": "provinsi_bali",
+          "patterns": ["makanan khas provinsi Bali", "makanan khas bali", "bali", "makanan bali", "apa saja makanan khas bali?", "makanan khas bali apa aja?"],
+          "responses": ["berikut adalah beberapa makanan khas bali Lawar Ayam Nasi Jinggo, Rujak Kuah Pindang, Ayam betutu, Babi Guling, Sate Susu, Pia Janger, Sate Lilit, Bulung, Tipat Blayag"],
+          "context": [""]
+      },
+  {
+          "tag": "provinsi_bangka",
+          "patterns": ["makanan khas provinsi Bangka belitung", "makanan khas bangka belitung", "bangka belitung", "makanan bangka belitung", "apa saja makanan khas bengka belitung?", "makanan khas bangka belitung apa aja?"],
+          "responses": ["berikut adalah beberapa makanan khas bangka belitung Mie Bangka, Jongkong, Lempah Kuning Khas Bangka, Sambal Lingkung, Lakso, Hok Lo Pan, Martabak Bangka, Mie Koba, Tahukok, Sambal Mangga Terasi"],
+          "context": [""]
+      },
+  {
+          "tag": "provinsi_jogjakarta",
+          "patterns": ["makanan khas provinsi jogja", "makanan khas jogjakarta", "jogjakarta", "yogyakarta", "makanan yogyakarta", "apa saja makanan khas yogyakarta?", "makanan khas jogja apa aja?"],
+          "responses": ["berikut adalah beberapa makanan khas jogjakarta Bakpia, Kue Kipo, Peyek, Ayam Goreng Kalasan, Geblek Jogja, Sayur Brongkos, Cemplon, Getuk Lindri, Jadah Manten, Sate Klathak"],
+          "context": [""]
+      },
+      {
+          "tag": "provinsi_sulawesi_selatan",
+          "patterns": ["makanan khas provinsi sulawesi selatan", "makanan khas sulawesi selatan", "sulawesi selatan", "sulsel" ,"makanan sulawesi selatan", "apa saja makanan khas sulawesi selatan?", "makanan khas sulawesi selatan apa aja?"],
+          "responses": ["berikut adalah beberapa makanan khas sulawesi selatan Songkolo Begadang, Pisang Epe, Kapurung, Coto Makassar, Gogos, Cangkuning, Sop Konro Karebosi, Roti Pawa,Jalangkote, Sanggara Peppe"],
+          "context": [""]
+      },
+  {
+          "tag": "provinsi_jakarta",
+          "patterns": ["makanan khas provinsi dki jakarta", "makanan khas jakarta", "dki jakarta", "jakarta" ,"makanan jakarta", "apa saja makanan khas dki jakarta?", "makanan khas jakarta apa aja?"],
+          "responses": ["berikut adalah beberapa makanan khas jakarta Kerak Telor, Ketoprak, Asinan Betawi, Gado-gado Betawi, Roti Buaya, Pecak Lele, Lontong Sayur, Nasi Ulam, Bir Pletok, Semur Jengkol"],
+          "context": [""]
+      },
+  {
+          "tag": "provinsi_ntt",
+          "patterns": ["makanan khas provinsi nusa tenggara timur", "makanan khas ntt", "ntt", "nusa tenggara timur" ,"makanan ntt", "apa saja makanan khas ntt?", "makanan khas nusa tenggara timur apa aja?"],
+          "responses": ["berikut adalah beberapa makanan khas nusa tenggara timur Daging Se’i, Rumpu-rampe , Jagung Bose, Kue Rambut , Jagung Titi, Ikan Kuah Belimbing, Catemak Jagung. Daun Singkong. Kue Cucur, Kompiang"],
+          "context": [""]
+      },
+  {
+          "tag": "provinsi_ntb",
+          "patterns": ["makanan khas provinsi nusa tenggara barat", "makanan khas ntb", "ntb", "nusa tenggara barat" ,"makanan ntb", "apa saja makanan khas ntb?", "makanan khas nusa tenggara barat apa aja?"],
+          "responses": ["berikut adalah beberapa makanan khas nusa tenggara barat Ayam Taliwang, Bebalung, Sate Pusut, Janda Berenang, Singang Ikan Khas Sumbawa, Nasi Balap Puyung Pedas, Sate Rembiga, Pelecing Kangkung Khas Lombok, Sate Bulayak, Jaje Tunjak"],
+          "context": [""]
+      },
+  {
+          "tag": "provinsi_kalimantan_barat",
+          "patterns": ["makanan khas provinsi kalimantan barat", "makanan khas kalbar", "kalbar", "kalimantan barat" ,"makanan kalbar", "apa saja makanan khas kalbar?", "makanan khas kalimantan barat apa aja?"],
+          "responses": ["berikut adalah beberapa makanan khas kalimantan barat Sotong Kangkung, Bubur Pedas, Mie Tiaw, Roti Cane, Kaloci, Lempok Durian , Kue Bingke, Amplang, Hekeng, Kerupuk Basah/Temet"],
+          "context": [""]
+      },
+  {
+          "tag": "provinsi_sumatera_utara",
+          "patterns": ["makanan khas provinsi sumatera utara", "makanan khas sumut", "sumut", "sumatera utara" ,"makanan sumut", "apa saja makanan khas sumut?", "makanan khas sumatera utara apa aja?"],
+          "responses": ["berikut adalah beberapa makanan khas sumatera utara Dali Ni horbo Tapanuli, Ikan Arsik, Babi Panggang Karo, Pagit-Pagit, Cimpa, Ombus-Ombus, Mie Gomak, Naniura, Manuk Na Niatur, ue Lapet/Pohul-pohul"],
+          "context": [""]
+      },
+  {
+          "tag": "provinsi_sumatera_barat",
+          "patterns": ["makanan khas provinsi sumatera barat", "makanan khas sumbar", "sumbar", "sumatera barat" ,"makanan sumatera barat", "apa saja makanan khas sumbar?", "makanan khas sumatera barat apa aja?"],
+          "responses": ["berikut adalah beberapa makanan khas sumatera barat Rendang Lokan, Sate Padang, Asem Pandeh Daging, Gulai Ikan Kakap, Pangek Masin Kerapu, Katan Sarikayo, Sala Lauak, Gulai Itiak, Lompong Sagu Padang, Lapek Bugis"],
+          "context": [""]
+      },
+      {
+          "tag": "mie_bangka",
+          "patterns": ["apa itu mie bangka?", "deskripsi mie bangka", "mie bangka", "mi bangka" ,"apa itu mi bangka?", "deskripsi mie bangka"],
+          "responses": ["Mie Bangka, hidangan akulturasi dari keturunan Cina yang tinggal di Bangka/Belitung. Mie-nya disiram kuah kental kecoklatan dengan tone manis. Isinya udang dan potongan bakso ikan. Uniknya, pada saat penyajiannya mereka menggunakan daun simpur."],
+          "context": [""]
+      },
+  {
+          "tag": "jongkong",
+          "patterns": ["apa itu jongkong?", "deskripsi jongkong", "jongkong", "kue jongkong" ,"apa itu kue jongkong?", "deskripsi kue jongkong"],
+          "responses": ["Kue Jongkong merupakan penganan manis yang terkenal dari daerah Sumatera bagian selatan terutama pulau Bangka Belitung. Kue ini memiliki serat yang halus dan lembut seperti puding terdiri dari lapisan atas berwarna putih, lapisan tengah berwarna hijau (pandan), lapisan berikutnya gula kabung (gula aren) dan biasanya dicetak di dalam gelas atau mangkuk kecil. Kue Jongkong terbuat dari campuran tepung beras, tepung tapioka, kelapa muda, garam dan gula merah."],
+          "context": [""]
+      },
+  {
+          "tag": "lempah_kuning",
+          "patterns": ["apa itu lempah kuning?", "deskripsi lempah kuning", "lempah kuning", "lempah" ,"apa itu lempah?", "deskripsi lempah"],
+          "responses": ["Lempah Kuning banyak ditemui di Kota Pangkalpinang merupakan masakan lempah yang isinya terdiri dari ikan kakap merah atau tenggiri dengan kuah yang berbumbu kunyit, cabai merah, bawang merah, bawang putih, lengkuas dan belacan. Lempah ini memiliki kuah berwarna kuning dan biasanya dimasukkan potongan-potongan nanas sehingga disebut juga lempah nanas. "],
+          "context": [""]
+      },
+  {
+          "tag": "sambal_lingkung",
+          "patterns": ["apa itu sambal lingkung?", "deskripsi sambal kuning", "sambal lingkung", "sambalingkung" ,"semblingkung", "apa itu sambalingkung?", "deskripsi sambalingkung"],
+          "responses": ["Sambalingkung atau semblingkung adalah makanan khas bangka belitung yang berasal dari ikan. Sambalingkung atau semblingkung ini dapat pula disebut ABON IKAN. Jika anda bandingkan dengan Abon Ikan lainnya, maka ada perbedaan dari segi cita rasa. Pertama, lebih harum dan kedua, lebih gurih. "],
+          "context": [""]
+      },
+  {
+          "tag": "lakso",
+          "patterns": ["apa itu lakso?", "deskripsi lakso", "lakso", "laksa" , "apa itu laksa?", "deskripsi laksa"],
+          "responses": ["Salah satu kuliner khas Bangka yang wajib dicoba adalah Lakso .Lakso atau Laksa terbuat dari mie putih yang dibuat dari adonan tepung beras dan sagu, dan dibentuk menyerupai mie dan dicetak seperti putu mayang atau krupuk putih ukuran mini. Mie putih terasa gurih dan kenyal. Kuah lakso dengan cita rasa rempah-rempah yang khas berwarna kuning pucat, terbuat dari santan yang diberi bumbu bawang merah, bawang putih, kunyit, ketumbar, kemiri, lengkuas, serai dan ikan tenggiri yang dicacah halus."],
+          "context": [""]
+      },
+  {
+          "tag": "hok_lo_pan",
+          "patterns": ["apa itu hok lo pan?", "deskripsi hok lo pan", "hok lo pan", "hoklopan" , "apa itu hoklopan?", "deskripsi hoklopan"],
+          "responses": ["Salah satu makanan Khas Bangka Belitung yang sangat terkenal adalah Hok Lo Pan . Hok Lo Pan / Martabak Manis ini adalah kue yang sangat sederhana dan sangat mudah pembuatnya  . Bahan yang digunakan membuat Hok Lo Pan adalah tepung terigu, diolesi dengan mentega, ditaburi coklat butir campur kacang tanah dan wijen, atau keju parut campur wijen, kemudian diberikan susu kental manis. Kini dalam perkembangannya  mulai diberi variasi  bahan pisang, strawberry, blueberry dll. Hok Lo Pan  rasanya sangat sesuai dengan lidah orang Indonesia."],
+          "context": [""]
+      },
+  {
+          "tag": "mie_koba",
+          "patterns": ["apa itu mie koba?", "deskripsi mie koba", "mie koba", "mi koba" , "apa itu mi koba?", "deskripsi mi koba"],
+          "responses": [" Mie berkuah ikan ini mempunyai cita rasa yang khas. Mie Koba berasal dari Kabupaten Bangka Tengah yang ibukotanya adalah Kota Koba. Mie Koba adalah mie yang diberi taoge dan disiram dengan kuah yang berasal dari daging ikan berbumbu. mie yang dipakai harus mie fresh yang dibuat sendiri dan baru akan dimasak pada saat ada yang memesannya. Untuk ikannya sendiri, secara umum ikan yang sering digunakan untuk membuat kuah Mie Koba ini adalah ikan tenggiri, ikan kakap dan ikan Ciu (sebutan buat ikan selar)."],
+          "context": [""]
+      },
+  {
+          "tag": "tahu_kok",
+          "patterns": ["apa itu tahu kok", "deskripsi tahu kok", "tahu kok", "tahukok" , "apa itu tahukok?", "deskripsi tahukok"],
+          "responses": [" Tahu Kok adalah salah satu makanan yang berasal dari Bangka Belitung. Makanan ini terbuat dari bahan isian ikan tenggiri dan udang yang disajikan bersama bakso ikan dan kuah sup."],
+          "context": [""]
+      },
+  {
+          "tag": "sambal_mangga",
+          "patterns": ["apa itu sambal mangga?", "deskripsi sambal mangga", "sambal mangga", "sambalmangga" , "apa itu sambalmangga?", "deskripsi sambalmangga"],
+          "responses": [" Sambal mangga merupakan salah satu jenis sambal yang sering dinikmati oleh masyarakat bangka. Mungkin makanan ini bisa disebut dengan nama rujak buah mangga, namun buah mangga di sini akan diserut menjadi bentuk kecil-kecil panjang. Sambal buah mangga tentu memiliki rasa pedas yang sama seperti jenis sambal yang lainnya."],
+          "context": [""]
+      },
+  {
+          "tag": "rendang_lokan",
+          "patterns": ["apa itu rendang lokan?", "deskripsi rendang lokan", "rendang lokan", "rendanglokan" , "apa itu rendanglokan?", "deskripsi rendanglokan"],
+          "responses": [" Rendang lokan merupakan makanan yang yang dibuat dari kerang, santan kelapa, dan bumbu-bumbu. Rasa rendang lokan sangat unik, mulai dari gurih, pedas, kenyal, dan ada rasa manis alami dari daging lokan itu sendiri. Rendang lokan yang sudah menjadi cokelat kehitaman biasanya memiliki rasa kaldu lebih kuat."],
+          "context": [""]
+      },
+  {
+          "tag": "lapek_bugis",
+          "patterns": ["apa itu lapek bugis?", "deskripsi lapek bugis", "lapek bugis", "pengertian lapek bugis" , "lapek bugis itu apa?", "deskripsi lapek bugis?"],
+          "responses": [" Lapek bugis merupakan kue yang terbuat dari tepung ketan yang dikukus dan dibungkus daun pisang. Lapek bugis memiliki citra manis gurih. "],
+          "context": [""]
+      },
+  {
+          "tag": "sate_padang",
+          "patterns": ["apa itu sate padang?", "deskripsi sate padang", "sate padang", "makanan khas sate padang" , "pengertian sate padang?", "deskripsi sate padang?"],
+          "responses": [" Sate Padang merupakan makanan  dengan bahan daging sapi, lidah atau jeroan dengan bumbu kuah kacang kental ditambah cabai yang banyak, membuat rasanya pedas, dan makin lezat dengan perpaduan Royco Bumbu Dasar Ayam Kuning. Keunikan dari date ini adalah pada bumbu-bumbunya yang sarat rempah-rempah. "],
+          "context": [""]
+      },
+  {
+          "tag": "asam_pandeh",
+          "patterns": ["apa itu asam pandeh?", "deskripsi asam pandeh", "asam pandeh", "asam pandeng daging" , "apa itu asam pandeh daging?", "deskripsi asam pandeh daging"],
+          "responses": [" Asem Pandeh Daging seperti daging rendang yang berwarna kecoklatan dan sedikit berkuah. Asam pandeh sendiri memiliki arti asam pedas karena bumbu dari kuliner ini didominasi oleh cabe. Selain pedas, nuansa rasa asam dari daging berasal dari asam kandis. Paduan rasa asam dan pedas menjadikan daging begitu nikmat saat disantap"],
+          "context": [""]
+      },
+  {
+          "tag": "gulai_ikan",
+          "patterns": ["apa itu gulai ikan?", "deskripsi gulai ikan", "gulai ikan", "gulai ikan kakap" , "apa itu gulai ikan kakap?", "deskripsi gulai ikan kakap"],
+          "responses": [" Gulai ikan kakap ini merupakan makanan yang dibuat dari ikan kakap segar, santan dan bumbu-bumbu lainnya. Gulai ikan kakak sudah sering menjadi sajian favorite di kota padang. "],
+          "context": [""]
+      },
+  {
+          "tag": "pangek_masin",
+          "patterns": ["apa itu pangek masin?", "deskripsi pangek masin", "pangek masin", "pangek masin kerapu" , "apa itu pangek masin kerapu?", "deskripsi pengek masin kerapu "],
+          "responses": [" Pangek Masin Kerapu adalah makanan khas pesisir Sumatera Barat. Makanan ini dikenal dengan rasa asam dan pedas, serta kuahnya yang kental. Rasa pedas dan warna hijau kuahnya didapat dari cabe rawit hijau yang digeprek atau diiris dan sedikit kunyit sebagai pencerah warna."],
+          "context": [""]
+      },
+  {
+          "tag": "katan sarikayo",
+          "patterns": ["apa itu katan sarikayo?", "deskripsi katan sarikayo", "katan sarikayo", "pengertian katan sarikayo" , "deskripsi katan sarikayo?", "makanan khas katan sarikayo"],
+          "responses": [" Katan sariyako pada umumnya berwarna coklat karna bahannya yang berasal dari gula merah dan santan. Katan sariyako dibungkus dengan daun pisang. "],
+          "context": [""]
+      },
+  {
+          "tag": "sala_lauak",
+          "patterns": ["apa itu sala lauak?", "deskripsi sala lauak", "sala lauak", "pengertian sala lauak" , "sala lauak itu apa?", "deskripsi sala lauak?"],
+          "responses": [" Sala Lauak merupakan gorengan yang terbuat dari campuran ikan teri dan tepung beras. "],
+          "context": [""]
+      },
+  {
+          "tag": "gulai_itiak",
+          "patterns": ["apa itu gulai itiak?", "deskripsi gulai itiak", "gulai itiak", "pengertian gulai itiak" , "gulai itiak itu apa?", "deskripsi gulai itiak"],
+          "responses": [" Gulai Itiak merupakan masakan menggunakan itik sebagai bahan dasar, dengan bumbu cabe kriting hijau, laos, kunyit, jahe, daun salam , daun jeruk dan daun kunyit. Membuatnya digunakan bebek yang setelah dipotong lalu dibakar terlebih dahulu. Hasilnya adalah gulai bebek yang berwarna hijau. "],
+          "context": [""]
+      },
+  {
+          "tag": "lompong_sagu_padang",
+          "patterns": ["apa itu lompong sagu padang?", "deskripsi lompong sagu padang", "lompong sagu padang", "lompong sagu" , "lompong sagu itu apa?", "deskripsi lompong sagu"],
+          "responses": [" Lompong Sagu Padang merupakan kue yang terbuat dari tepung sagu yang diaduk Bersama pisang kapok, santan dan gula aren. Kue ini dibuat dengan cara dipanggang diatas bara hingga memiliki aroma khas. "],
+          "context": [""]
+      },
+  {
+          "tag": "dali_ni_horbo_tapanuli",
+          "patterns": ["apa itu dali ni harbo tapanuli?", "deskripsi dali ni harbo tapanuli", "dali ni harbo tapanuli", "pengertian dali ni harbo tapanuli" , "dali ni harbo tapanuli?", "deskripsi dali ni harbo tapanuli?"],
+          "responses": [" Dali Ni Horbo Tapanuli merupakan makanan yang seirng dijuluki sebagai keju batak yang terbuat dari susu kerbau, dali ni horbo berasal dari tapanuli.  Bahan utamanya adalah susu kerbau dan air perasaan buah nanas untuk mengentalkan susu dan mengurangi aroma amis. Agar lebih auntentik, bisa pula ditambahkan air perasan daun pepaya hijau.  "],
+          "context": [""]
+      },
+  {
+          "tag": "ikan_arsik",
+          "patterns": ["apa itu ikan arsik?", "deskripsi ikan arsik", "ikan arsik", "pengertian ikan arsik" , "ikan arsik itu apa?", "deskripsi ikan arsik?"],
+          "responses": ["Ikan Arsik adalah makanan yang terbuat dari ikan mas yang dimasak.  Bumbu arsik adalah terbuat dari beragam jenis rempah sehingga memiliki rasa yang khas."],
+          "context": [""]
+      },
+  {
+          "tag": "babi_panggang_karo",
+          "patterns": ["apa itu babi panggang karo?", "deskripsi babi panggang karo", "babi panggang karo", "pengertian babi panggang karo" , "babi panggang karo itu apa?", "deskripsi babi panggang karo?"],
+          "responses": ["Babi panggang karo makanan yang terbuat dari daging babi yang dipanggang atau dibakar dan ditambahi dengan bumbu-bumbu lainnya . Makanan ini adalah masakan khas suku karo. "],
+          "context": [""]
+      },
+  {
+          "tag": "pagit_pagit",
+          "patterns": ["apa itu pagit-pagit?", "deskripsi pagit-pagit", "pagit-pagit", "pagit pagit", "pengertian pagit-pagit" , "pagit-pagit itu apa?", "deskripsi pagit-pagit?"],
+          "responses": ["Pagit-pagit merupakan makanan yang terbuat dari rumput yang diambil dari usus sapi. Memiliki cita rasa gurih sedikit pahit dan sangat harum mengugat selera. "],
+          "context": [""]
+      },
+  {
+          "tag": "cimpa",
+          "patterns": ["apa itu cimpa?", "deskripsi cimpa", "cimpa", "pengertian cimpa" , "cimpa itu apa?", "deskripsi cimpa?"],
+          "responses": ["Cimpa adalah jenis kudapan khas suku karo. Cimpa terbuat dari beras ketan merah atau putih. Di dalam beras ketan merah dimasukkan gula merah atau gula aren yang telah dicampur dengan kelapa parut dan biasanya dibungkus dnegna daun pisang. "],
+          "context": [""]
+      },
+  {
+          "tag": "ombus_ombus",
+          "patterns": ["apa itu ombus-ombus?", "deskripsi ombus-ombus", "ombus-ombus", "pengertian ombus-ombus" , "ombus-ombus itu apa?", "deskripsi ombus-ombus?"],
+          "responses": ["Ombus-ombus adalah makanan khas tapanuli yang terbuat dari tepung beras yang diberi gula ditengah dan dibungkus dauh pisang. "],
+          "context": [""]
+      },
+  {
+          "tag": "naniura",
+          "patterns": ["apa itu naniura", "deskripsi naniura", "naniura", "pengertian naniura" , "naniura itu apa?", "deskripsi naniura?"],
+          "responses": ["Naniura adalah sejenis makanan ikan mas yang dimasak tanpa api, tapi direndam dalam jeruk ipis selama 6-8 jam. Seperti sashimi ikan mentah khas jepang. "],
+          "context": [""]
+      },
+  {
+          "tag": "manuk_na_niatur",
+          "patterns": ["apa itu manuk na niatur", "deskripsi manuk na niatur", "manuk na niatur", "pengertian manuk na niatur" , "manuk na niatur itu apa?", "deskripsi manuk na niatur?"],
+          "responses": ["Manuk Na Niatur merupakan salah satu hidangan yang sering di sajikan dalam acara syukuran adat barak. Satu ekor ayam jantan yang tidaj memiliki kecacatan sama sekali adalah bahan utama menu ini  dibuat. "],
+          "context": [""]
+      },
+  {
+          "tag": "kue_lapet",
+          "patterns": ["apa itu kue lapet?", "deskripsi kue lapet", "kue lapet","lapet", "pengertian kue lapet" , "kue lapet itu apa?", "deskripsi kue lapet?"],
+          "responses": ["Kue lapet berbahan dasar beras ada juga ketan . makanan ini merupakan makanan khas tradisional batak."],
+          "context": [""]
+      },
+  {
+          "tag": "sotong_kangkung",
+          "patterns": ["apa itu sotong kangkung?", "deskripsi sotong kangkung", "sotong kangkung", "pengertian sotong kangkung" , "sotong kangkung itu apa?", "deskripsi sotong kangkung"],
+          "responses": ["Sotong Kangkung merupakan makanan khas Kalimantan Barat yang terbuat dari Sotong dan Kangkung. Menggunakan bahan kacang goreng yang ditumbuk halus dan kuah kanji yang memiliki rasa asam dan manis yang berasal dari asam jawa setelah itu ditambahkan sedikit kecap ikan diatasnya"],
+          "context": [""]
+      },
+  {
+          "tag": "bubur_pedas",
+          "patterns": ["apa itu bubur pedas?", "deskripsi bubur pedas", "bubur pedas","bubbur paddas", "apa itu bubbur paddas?", "pengertian bubur pedas" , "bubur pedas itu apa?", "deskripsi bubur pedas?"],
+          "responses": ["Bubur Pedas atau sering disebut Bubbur Paddas merupakan makanan khas Kalimantan Barat. Makanan ini terbuat dari beras yang sudah dihaluskan dan dicampur dengan sayur-sayuran khas seperti daun kesum, wortel, kecambah, dan sayur lainnya. Kacang tanah, ikan teri, dan bawang goreng ditambahkan sebagai toping dari bubur ini."],
+          "context": [""]
+      },
+  {
+          "tag": "mie_tiaw_melayu",
+          "patterns": ["apa itu mie tiaw melayu?", "deskripsi mie tiaw melayu", "mie tiaw melayu","mie tiaw","apa itu mie tiaw?","mi tiaw melayu","pengertian mie tiaw melayu" , "mie tiaw melayu itu apa?", "deskripsi mie tiaw melayu?"],
+          "responses": ["Mie tiaw Melayu merupakan kuliner khas Kalimantan Barat yang wajib dicoba. Mie Tiaw diracik dengan bumbu spesial, cita rasanya yang khas membuat orang ketagihan untuk menikmati kembali."],
+          "context": [""]
+      },
+  {
+          "tag": "roti_cane",
+          "patterns": ["apa itu roti cane?", "deskripsi roti cane", "roti cane", "pengertian roti cane" , "roti cane itu apa?", "deskripsi roti cane?"],
+          "responses": ["Roti Cane merupakan makanan sejenis roti pipih dengan pengaruh India. Roti Cane adalah penganan berbahan dasar tepung dan kemudian dipanggang. Biasanya Roti Cane ini dinikmati dengan The Tarik dan Kari Kambing."],
+          "context": [""]
+      },
+  {
+          "tag": "kaloci",
+          "patterns": ["apa itu kaloci?", "deskripsi kaloci", "kaloci", "pengertian kaloci" , "kaloci itu apa?", "deskripsi kaloci?"],
+          "responses": ["Kaloci merupakan kudapan khas di Kalimantan Barat yang wajib dicoba. Kaloci adalah camilan yang mirip seperti mochi, namun kaloci ini tidak ada isian didalamnya. Kaloci ini disajikan dengan taburan kacang tanah yang sudah ditumbuk, gula pasir dan wijen diatasnya."],
+          "context": [""]
+      },
+  {
+          "tag": "lempok_durian",
+          "patterns": ["apa itu lempok durian?", "deskripsi lempok durian", "lempok durian","lempok","apa itu lempok", "pengertian lempok durian" , "lempok durian itu apa?", "deskripsi lempok durian?"],
+          "responses": ["Lempok Durian merupakan jajanan khas Kalimantan Barat yang terbuat dari buah durian dengan camouran tepung ketan. Bentuknya seperti dodol dengan tekstur kenyal dan cita rasa duriannya sangat kuat. "],
+          "context": [""]
+      },
+  {
+          "tag": "kue_bingke",
+          "patterns": ["apa itu kue bingke?", "deskripsi kue bingke", "kue bingke", "pengertian kue bingke" , "kue bingke itu apa?", "deskripsi kue bingke?"],
+          "responses": ["Kue Bingke atau sering disebut dengan Bingka merupakan panganan manis dan lembut yang terbuat dari santan, telur, gula, dan tepung terigu. Proses pembuatannya lumayan memakan waktu karena harus dipanggang sampai matang dengan sempurna. Selain teksturnya yang lembut, bingke juga dicetak dalam cetakan bunga yang khas sehingga terlihat cantik dan menarik."],
+          "context": [""]
+      },
+  {
+          "tag": "amplang",
+          "patterns": ["apa itu amplang?", "deskripsi amplang", "amplang", "pengertian amplang" , "amplang itu apa?", "deskripsi amplang?"],
+          "responses": ["Amplang merupakan oleh-oleh khas Kalimantan Barat yang mirip seperti kerupuk dan memiliki bentuk agak bulat dan gemuk. Bahan utama dalam pembuatan Amplang adalah Ikan Tenggiri."],
+          "context": [""]
+      },
+  {
+          "tag": "hekeng",
+          "patterns": ["apa itu hekeng?", "deskripsi hekeng", "hekeng", "pengertian hekeng" , "hekeng itu apa?", "deskripsi hekeng?"],
+          "responses": ["Hekeng merupakan makanan khas Kalimantan Barat yang terbuat dari daging udang dan daging babi yang telah dihaluskan. Rasa Hekeng seperti Siomay namun bedanya Hekeng biasanya digoreng kering dan disantap bersama kuah manis."],
+          "context": [""]
+      },
+  {
+          "tag": "kerupuk_basah_temet",
+          "patterns": ["apa itu kerupuk basah?", "apa itu temet?","deskripsi kerupuk basah", "kerupuk basah","temet", "pengertian kerupuk basah","pengertian temet", "temet itu apa?","kerupuk basah itu apa?", "deskripsi temet?"],
+          "responses": ["Kerupuk Basah/Temet merupakan makanan khas Kalimantan Barat yang mempunyai tekstur yang basah dan kenyal. Kerupuk Basah terbuat dari adonan tepung tapioka dicampur bahan perasa seperti udang atau ikan. Biasanya makanan ini dinikmati bersama dengan sambal kacang."],
+          "context": [""]
+      },
+  {
+          "tag": "songkolo_begadang",
+          "patterns": ["apa itu songkolo begadang?", "deskripsi songkolo begadang", "songkolo begadang", "pengertian songkolo begadang" , "songkolo begadang itu apa?", "deskripsi songkolo begadang?"],
+          "responses": ["Songkolo Bagadang disebut juga Songkolo atau Sokko. Makanan ini terbuat dari beras ketan hitam. Nama Begadang ditambahkan karena makanan ini umumnya dijual dimalam hari. Membuat Songkolo sangat mudah, ketan hitam dicampur sedikit dengan ketan putih kemudian dikukus dengan santan dan siap disajikan."],
+          "context": [""]
+      },
+  {
+          "tag": "pisang_epe",
+          "patterns": ["apa itu pisang epe?", "deskripsi pisang epe", "pisang epe", "pengertian pisang epe" , "pisang epe itu apa?", "deskripsi pisang epe?"],
+          "responses": ["Pisang Epe adalah salah satu makanan khas Sulawesi Selatan yang terbuat dari Pisang Raja yang dicepit (epe) hingga pisang menjadi pipih. Pisang Epe memiliki banyak varian rasa. Mulai dari Pisan Epe rasa coklat, durian, coklat susu, coklat milo, keju milo, dll."],
+          "context": [""]
+      },
+  {
+          "tag": "kapurung",
+          "patterns": ["apa itu kapurung?", "deskripsi kapurung", "kapurung", "pengertian kapurung" , "kapurung itu apa?", "deskripsi kapurung?"],
+          "responses": ["Kapurung merupakan kuliner asli Sulawesi Selatan yang terbuat dari sari atau tepung sagu dan lebih dikenal dengan sebutan Pugalu. Sayuran yang digunakan sebagai pendamping Kapurung bermacam-macam dari kacang panjang, jagung manis, terong, bayam, dan juga jantung pisang. Rasa kuahnya yang asam, gurih dan pedas akan menambah cita rasa dalam sajian ini"],  
+    "context": [""]
+  },
+  {
+          "tag": "coto_makassar",
+          "patterns": ["apa itu coto makassar?", "deskripsi coto makassar", "coto makassar", "pengertian coto makassar" , "coto makassar itu apa?", "deskripsi coto makassar?"],
+          "responses": ["Coto Makassar merupakan makanan tradisional dari Sulawesi Selatan. Maknan ini berupa rebusan jeroan bercampur daging sapi yang diiris-iris lalu dibumbui dengan racikan bumbu khusus. Coto Makassar memiliki rasa yang gurih dari rebusan daging, jeroan, dan rempah-rempah. Makanan ini biasanya disajikan dengan Burasa yang dibungkus dengan daun pisang dan ketupat yang dibungkus dengan daun kelapa."],
+          "context": [""]
+      },
+  {
+          "tag": "gogos",
+          "patterns": ["apa itu gogos?", "deskripsi gogos", "gogos", "pengertian gogos" , "gogos itu apa?", "deskripsi gogos?"],
+          "responses": ["Gogos merupakan salah satu kuliner dari Sulawesi Selatan yang terbuat dari beras ketan yang direndam dengan santan lalu di masak hingga matang kemudian dibungkung dengan daun pisang dan dibakar selama 30 menit agar terasa gurih. Gogos disajikan dengan tanpa isian dan dengan isian atau disebut dengan Gogos Kambu."],
+          "context": [""]
+      },
+  {
+          "tag": "cangkuninng",
+          "patterns": ["apa itu cangkuninng?", "deskripsi cangkuninng", "cangkuninng", "pengertian cangkuninng" , "cangkuninng itu apa?", "deskripsi cangkuninng?"],
+          "responses": ["Cangkuning merupakan salah satu jajanan dari Sulawesi Selatan yang memiliki rasa yang manis dan legit. Cangkuning terbuat dari Tepung ketan dan Santan kental yang memiliki isian berupa kelapa parut yang dicampur dengan gula merah. Kemudian dibungkus dengan menggunakan daun pisang."],
+          "context": [""]
+      },
+  {
+          "tag": "sup_konro",
+          "patterns": ["apa itu sup konro?", "deskripsi sup konro","apa itu konro", "sup konro","konro", "pengertian sup konro" , "sup konro itu apa?", "konro itu apa?","deskripsi sup konro?"],
+          "responses": ["Sup Konro adalah makanan khas tradisi Bugis dan Makassar. Sup ini biasanya dibuat dengan bahan iga sapi. Kuahnya menggunakan buah kluwek sehingga terlihat berwarna gelap dan bumbunya kaya akan rempah-rempah. Sup Konro biasanya disajikan dengan ketupat yang dipotong kecil-kecil."],
+          "context": [""]
+      },
+  {
+          "tag": "roti_pawa",
+          "patterns": ["apa itu roti pawa?", "deskripsi roti pawa", "roti pawa", "pengertian roti pawa" , "roti pawa itu apa?", "deskripsi roti pawa?"],
+          "responses": ["Roti Pawa merupakan Salah satu jajanan dari Sulawesi Selatan yang memiliki bentuk bulat seperti bakpao serta memiliki isian berupa kacang yang dicampur gula pasir ataupun kelapa parut yang dicampur dengan gula merah, keju, coklat, daging ayam, juga ubi ungu yang dihaluskan. Memiliki tekstur yang lembut dan berpori."],
+          "context": [""]
+      },
+  {
+          "tag": "jalangkote",
+          "patterns": ["apa itu jalangkote?", "deskripsi jalangkote", "jalangkote", "pengertian jalangkote" , "jalangkote itu apa?", "deskripsi jalangkote?"],
+          "responses": ["Jalangkote adalah sebuah makanan khas Makassar yang mirip pastel dan terbuat dari tepung terigu. Kulit Jalangkote tidak terlalu tebal sehinggan tekstur kulitnya cukup garing atau crispy. Isian dari jalangkote berupa wortel, kentang, tauge, dan juga laksa yang dipadu dengan bawang putih, bawang merah dan bumbu lainnya."],
+          "context": [""]
+      },
+  {
+          "tag": "sanggara_peppe",
+          "patterns": ["apa itu sanggara peppe?", "deskripsi sanggara peppe", "sanggara peppe", "pengertian sanggara peppe","sanggara peppe itu apa?", "deskripsi sanggara peppe?"],
+          "responses": ["Sanggara Peppe merupakan salah satu jajanan khas Sulawesi Selatan. Sanggara Peppe adalah pisang goreng geprek, makanan ini terbuat dari pisang yang belum matang kemudian digoreng dan ditumbuk/geprek (peppe). Sanggara Peppe atau Pisang Peppe biasanya disajikan dengan sambal yang terbuat dari tomat, terasi, cabai kecil, serta garam."],
+          "context": [""]
+      },
+  {
+          "tag": "lawar_ayam",
+          "patterns": ["apa itu lawar ayam?", "deskripsi lawar ayam", "lawar ayam", "pengertian lawar ayam" , "lawar ayam itu apa?", "deskripsi lawar ayam?"],
+          "responses": ["Makanan ini adalah salah satu makanan khas dan unik yang dimiliki oleh Bali. Uniknya makanan ini menggunakan  darah hewan dimana darah tersebut akan dicampurkan ke bumbu-bumbu tertentu. Biasanya darah yang digunakan adalah darah yang setengah matang untuk menambah kelezatan makanan tersebut. Lawar adalah campuran antara sayur-sayuran, bumbu khas Bali, Kelapa, Terasi dan daging cincang. Lawar memiliki banyak sebutan tergantung jenis daging dan sayur yang digunakan. Salah satu contohnya adalah Lawar Ayam, disebutkan demikian karena daging yang digunakan adalah daging Ayam. keharmonisan dan keseimbangan."],
+          "context": [""]
+      },
+  {
+          "tag": "nasi_jinggo",
+          "patterns": ["apa itu nasi jinggo?", "deskripsi nasi jinggo", "nasi jinggo", "pengertian nasi jinggo" , "nasi jinggo itu apa?", "deskripsi nasi jinggo?"],
+          "responses": ["Sajian ini merupakan makanan yang terdiri dari nasi dengan porsi sedikit kemudian diberi lauk ayam sisit (suwir), sambal sero, kering tempe, serundeng, serta mi goreng. Ciri khas dari makanan ini adalah pembungkusnya yang berasal dari daun pisang. Nasi jinggo juga terkenal sebagai makanan halal di Bali."],
+          "context": [""]
+      },
+  {
+          "tag": "rujak_kuah_pindang",
+          "patterns": ["apa itu rujak kuah pindang?", "deskripsi rujak kuah pindang", "rujak kuah pindang", "pengertian rujak kuah pindang" , "rujak kuah pindang itu apa?", "deskripsi rujak kuah pindang?"],
+          "responses": ["Rujak Kuah Pindang adalah salah satu jenis rujak khas dan populer di Bali. Rujak ini berisi kombinasi dari beberapa buah-buahan segar yang hampir mirip dengan rujak manis atau rujak gula."],
+          "context": [""]
+      },
+  {
+          "tag": "ayam_betutu",
+          "patterns": ["apa itu ayam betutu?", "deskripsi ayam betutu", "ayam betutu", "pengertian ayam betutu" , "ayam betutu itu apa?", "deskripsi ayam betutu?"],
+          "responses": ["Ayam Betutu adalah lauk yang terbuat dari ayam atau bebek yang utuh yang berisi bumbu, kemudian dipanggang dalam api sekam. Betutu ini telah dikenal di seluruh kabupaten di Bali. Betutu merupakan jenis makanan tradisional daerah Bali yang bahan mentahnya berupa karkas utuh itik dan ayam."],
+          "context": [""]
+      },
+  {
+          "tag": "babi_guling",
+          "patterns": ["apa itu babi guling?", "deskripsi babi guling", "babi guling", "pengertian babi guling" , "babi guling itu apa?", "deskripsi babi guling?"],
+          "responses": ["Babi guling (di Bali disebut be guling) adalah sejenis makanan yang terbuat dari anak babi betina atau jantan yang perutnya diisikan dengan bumbu dan sayuran seperti daun ketela pohon dan lalu dipanggang sambil diputar-putar (diguling-gulingkan) sampai matang dengan ditandai dengan perubahan warna kulit menjadi kecokelatan dan renyah."],
+          "context": [""]
+      },
+  {
+          "tag": "sate_susu",
+          "patterns": ["apa itu sate susu?", "deskripsi sate susu", "sate susu", "pengertian sate susu" , "sate susu itu apa?", "deskripsi satu sisi?"],
+          "responses": ["Sate susu adalah sebuah hidangan sate khas Kampung Jawa, Dusun Wanasari, Denpasar Barat, Bali. Sate tersebut terbuat dari daging payudara sapi yang dipotong dadu, direbus dan kemudian dibumbui. Hidangan tersebut biasa dijual pada bulan Ramadan. Bumbu dari sate tersebut tersebut dari tepung beras yang dicampur dengan santan, kencur, cabai merah, cabai rawit dan bawang putih."],
+          "context": [""]
+      },
+  {
+          "tag": "pia_janger",
+          "patterns": ["apa itu pia janger?", "deskripsi pia janger", "pia janger", "pengertian pia janger" , "pia janger itu apa?", "deskripsi pia janger?"],
+          "responses": ["Pia Janger adalah pia khas Bali yang merupakan saingan dari pada Pia Legong. Rasanya yang tidak jauh berbeda menjadikan Pia Janger pilihan pertama saat membeli pia. Bedanya sama Pia Legong? Pia Janger ini jauh lebih crispy (gurih). Pia Janger ini terdiri dari 4 varian rasa yaitu coklat, keju, kacang hijau, dan kacang tanah"],
+          "context": [""]
+      },
+  {
+          "tag": "sate_lilit",
+          "patterns": ["apa itu sate lilit?", "deskripsi sate lilit", "sate lilit", "pengertian sate lilit" , "sate lilit itu apa?", "deskripsi sate lilit?"],
+          "responses": ["Sate Lilit adalah sebuah varian sate asal Bali.[1] Sate ini terbuat dari daging babi, ikan, ayam, daging sapi, atau bahkan kura-kura yang dicincang, kemudian dicampur dengan parutan kelapa, santan, jeruk nipis, bawang merah, dan merica. Daging cincang yang telah berbumbu dilekatkan pada sebuah bambu atau tebu, kemudian dipanggang di atas arang. Tidak seperti sate lainnya yang dibuat dengan tusuk sate yang sempit dan tajam, tusuk sate lilit berbentuk datar dan lebar. Permukaan yang lebih luas memungkinkan daging cincang untuk melekat. Istilah lilit dalam bahasa Bali dan Indonesia berarti membungkus, yang sesuai untuk cara pembuatan sate ini."],
+          "context": [""]
+      },
+  {
+          "tag": "bulung",
+          "patterns": ["apa itu bulung?", "deskripsi bulung", "bulung", "pengertian bulung" , "bulung itu apa?", "deskripsi bulung?"],
+          "responses": ["Bulung adalah makanan khas Bali yang terbuat dari rumput laut hijau. Rumput laut disajikan utuh bersama dengan bumbu-bumbu."],
+          "context": [""]
+      },
+  {
+          "tag": "tipat_blayag",
+          "patterns": ["apa itu tipat blayag?", "deskripsi tipat blayag", "tipat blayag", "pengertian tipat blayag" , "tipat blayag itu apa?", "deskripsi tipat blayag?"],
+          "responses": ["Tipat Blayag adalah makanan tradisional khas Buleleng Bali, berupa tipat yang dibungkus gulungan janur, disajikan dengan sayur urap, ayam sisir, sambel, kedelai goreng, keripik kulit, dan ayam bumbu kuah.Wisata Kuliner Tipat Blayag ini sangat cocok untuk mengisi kegiatan liburan anda, apalagi saat liburan panjang seperti libur nasional, ataupun hari libur lainnya. "],
+          "context": [""]
+      },
+  {
+          "tag": "ayam_taliwang",
+          "patterns": ["apa itu ayam taliwang?", "deskripsi ayam taliwang", "ayam taliwang", "pengertian ayam taliwang" , "ayam taliwang itu apa?", "deskripsi ayam taliwang?"],
+          "responses": ["Ayam Taliwang adalah makanan khas yang berasal dari Taliwang, Sumbawa Barat. Makanan ini mulai dipopulerkan ke luar daerah pertama kali oleh masyarakat Taliwang yang tinggal di Kampung Taliwang, Kota Mataram, Nusa Tenggara Barat. Banyak yang salah mengartikan bahwa ayam taliwang ini adalah makanan khas Lombok."],
+          "context": [""]
+      },
+  {
+          "tag": "bebalung",
+          "patterns": ["apa itu bebalung?", "deskripsi bebalung", "bebalung", "pengertian bebalung" , "bebalung itu apa?", "deskripsi bebalung?"],
+          "responses": ["Bebalung adalah sebutan untuk hidangan khas Lombok dengan kuah yang menggenang. Sekilas tampak seperti sup namun dengan bumbu yang lebih kompleks sehingga rasanya lebih kaya."],
+          "context": [""]
+      },
+  {
+          "tag": "sate_pusut",
+          "patterns": ["apa itu sate pusut?", "deskripsi sate pusut", "sate pusut", "pengertian sate pusut" , "sate pusut itu apa?", "deskripsi sate pusut?"],
+          "responses": ["Sate pusut adalah sebuah hidangan sate khas Lombok, Nusa Tenggara Barat. Sate tersebut dibuat dengan melilitkan daging sapi pada tusuk sate yang sudah dibelah dua bagian ujungnya. Setelah ujung daging terjepit, daging digulung sampai dagingnya habis sebelum akhirnya dibakar."],
+          "context": [""]
+      },
+  {
+          "tag": "janda_berenang",
+          "patterns": ["apa itu janda berenang?", "deskripsi janda berenang", "janda berenang", "pengertian janda berenang" , "janda berenang itu apa?", "deskripsi janda berenang?"],
+          "responses": ["Janda berenang adalah salah satu kue atau jajan khas yang berasal dari daerah Sumbawa. Kue tersebut terbuat dari tepung maizena, kacang hijau yang dihaluskan dan gula merah serta dibungkus dengan daun pisang."],
+          "context": [""]
+      },
+  {
+          "tag": "singang",
+          "patterns": ["apa itu singang?", "deskripsi singang", "singang","apa itu singan?", "pengertian singang" , "singang itu apa?", "deskripsi singan?"],
+          "responses": ["Singang atau singan adalah sebuah masakan khas Sumbawa. Masakan tersebut terbuat dari ikan yang dibumbui dengan kunyit untuk menciptakan warna kuning."],
+          "context": [""]
+      },
+  {
+          "tag": "puyung_pedas",
+          "patterns": ["apa itu puyung pedas?", "deskripsi puyung pedas", "puyung pedas", "pengertian puyung pedas" , "puyung pedas itu apa?", "deskripsi puyung pedas?"],
+          "responses": ["Puyung Pedas adalah salah satu ciri khas kuliner di Pulau Lombok. Salah satu di antara kuliner khas yang terkenal dan bikin banyak orang ingin mencicipinya adalah nasi balap puyung, sebuah sajian yang terdiri atas nasi putih, suwir ayam bumbu pedas, suwir ayam kering, plus kacang dan kedelai goreng."],
+          "context": [""]
+      },
+  {
+          "tag": "sate_rembiga",
+          "patterns": ["apa itu sate rembiga?", "deskripsi sate rembiga", "sate rembiga", "pengertian sate rembiga" , "sate rembiga itu apa?", "deskripsi sate rembiga?"],
+          "responses": ["Sate rembiga merupakan sajian khas Lombok, Nusa Tenggara Barat (NTB) yang terbuat dari potongan daging sapi. Potongan daging sapi ini harus dimarinasi terlebih dulu selama lebih kurang dua jam sebelum dibakar. Daging sapi untuk membuat sate rembiga bisa dimarinasi menggunakan garam dan lada."],
+          "context": [""]
+      },
+  {
+          "tag": "plecing_kangkung",
+          "patterns": ["apa itu plecing kangkung?", "deskripsi plecing kangkung", "plecing kangkung", "pengertian plecing kangkung" , "plecing kangkung itu apa?", "deskripsi plecing kangkung?"],
+          "responses": ["Plecing kangkung merupakan makanan khas Lombok yang terdiri dari kangkung rebus dan taoge yang disajikan dengan sambal terasi super pedas di atas kangkung. Jadi kangkung dan sambal terasi dalam sajian ini tidak bisa dipisahkan. Sebagai pelengkap, ada taburan kacang goreng."],
+          "context": [""]
+      },
+  {
+          "tag": "sate_bulayak",
+          "patterns": ["apa itu sate bulayak?", "deskripsi sate bulayak", "sate bulayak", "pengertian sate bulayak" , "sate bulayak itu apa?", "deskripsi sate bulayak?"],
+          "responses": ["Sate bulayak adalah sate khas Pulau Lombok, Nusa Tenggara Barat, yang terbuat dari daging sapi berlumur bumbu khas Lombok dan disajikan bersama lontong. Bumbu sate tersebut terbuat dari kacang tanah sangrai tumbuk yang direbus bersama santan serta beberapa bumbu dapur lainnya sehingga rasanya mirip bumbu kari."],
+          "context": [""]
+      },
+  {
+          "tag": "jaje_tunjak",
+          "patterns": ["apa itu jaje tunjak?", "deskripsi jaje tunjak", "jaje tunjak", "pengertian jaje tunjak" , "jaje tunjak itu apa?", "deskripsi jaje tunjak?"],
+          "responses": ["Jaje tunjak poteng berarti kue tumbuk tape. Hidangan ini terdiri dari 2 makanan, yakni poteng yang berarti tapai dan jaje tunjak. Makanan ini terbuat dari ketan yang dicampur dengan parutan kelapa, lalu dikukus dan ditambahkan garam. Poteng ialah tape ketan yang pada proses pembuatannya digabungkan dengan perasan daun segar."],
+          "context": [""]
+      },
+  {
+          "tag": "daging_se'i",
+          "patterns": ["apa itu daging se'i?", "deskripsi daging se'i", "daging se'i", "pengertian daging se'i" , "daging se'i itu apa?", "deskripsi daging se'i?"],
+          "responses": ["Se'i sendiri merupakan daging asap yang diolah dengan bumbu tertentu dan menghasilkan cita rasa yang kaya dan bikin nagih. Se'i berarti daging yang disayat dalam ukuran kecil memanjang, lalu diasapi dengan bara api sampai matang. Di sisi lain, se'i adalah makanan khas suku Rote, penduduk asli Pulau Rote. Makanan ini kemudian merambah selera masyarakat Nusa Tenggara Timur (NTT) dan populer hingga luar negeri."],
+          "context": [""]
+      },
+  {
+          "tag": "rumpu_rampe",
+          "patterns": ["apa itu rumpu-rampe?", "apa itu rumpu rampe?","deskripsi rumpu-rampe","deskripsi rumpu rampe","rumpu-rampe", "rumpu rampe", "pengertian rumpu rampe" ,"pengertian rumpu-rampe", "rumpu rampe itu apa?","rumpu-rampe itu apa?", "deskripsi rumpu rampe?"],
+          "responses": ["Rumpu Rampe merupakan salah satu jenis makanan khas dari Nusa Tenggara Timur. Makanan ini terbuat dari bunga pepaya, daun kelor, buah pepaya muda, daun pepaya, daun singkong, serta jantung pisang. Sekarang ini rumpu rampe juga sering dipadukan dengan kangkung, udang, dan ikan teri."],
+          "context": [""]
+      },
+  {
+          "tag": "jagung_bose",
+          "patterns": ["apa itu jagung bose?", "deskripsi jagung bose", "jagung bose", "pengertian jagung bose" , "jagung bose itu apa?", "deskripsi jagung bose?"],
+          "responses": ["Jagung bose adalah sebuah olahan jagung berupa bubur jagung unik yang juga merupakan hidangan tradisional dari Nusa Tenggara Timur. Bubur yang juga mengandung campuran daging se'i ini biasa juga dimakan bersama ikan bakar sebagai ganti nasi."],
+          "context": [""]
+      },
+  {
+          "tag": "kue_rambut",
+          "patterns": ["apa itu kue rambut?", "deskripsi kue rambut", "kue rambut", "pengertian kue rambut" , "kue rambut itu apa?", "deskripsi kue rambut?"],
+          "responses": ["Kue rambut merupakan makanan khas alor yg dibuat dengan campuran tepung beras, gula merah, air, garam dan minyak. Agar kue itu berbentuk seperi rambut maka adonan tersebut di cetak dengan menggunakan tempurung kelapa atau kaleng yang sudah di lubangi."],
+          "context": [""]
+      },
+  {
+          "tag": "jagung_titi",
+          "patterns": ["apa itu jagung titi?", "deskripsi jagung titi", "jagung titi", "pengertian jagung titi" , "jagung titi itu apa?", "deskripsi jagung titi?"],
+          "responses": ["Jagung Titi adalah makanan kuliner khas yang berasal dari Nusa Tenggara Timur, terutama di Pulau Flores bagian timur seperti di Solor, Adonara, Alor, dan Lembata. Dinamakan jagung Titi karena proses pengolahan biji jagung tersebut dititi diatas batu. Cara pengolahannya dengan menggoreng jagung sampai setengah matang, Jagung yang panas ini kemudian diambil sedikit demi sedikit lalu dititi diatas batu yang rata sampai jagung berbentuk rata. Pengolahan sampai tahap meniti tersebut dinamakan dengan jagung Titi."],
+          "context": [""]
+      },
+  {
+          "tag": "ikan_kuah_belimbing",
+          "patterns": ["apa itu ikan kuah belimbing?", "deskripsi ikan kuah belimbing", "ikan kuah belimbing", "pengertian ikan kuah belimbing" , "ikan kuah belimbing itu apa?", "deskripsi ikan kuah belimbing?"],
+          "responses": ["Ikan kuah belimbing adalah masakan tradisional asal Nusa Tenggara Timur. Masakan berbahan dasar ikan tonggkol ini memiliki rasa asam segar dan sedikit pedas."],
+          "context": [""]
+      },
+  {
+          "tag": "catemak_jagung",
+          "patterns": ["apa itu catemak jagung?", "deskripsi catemak jagung", "catemak jagung", "pengertian catemak jagung" , "catemak jagung itu apa?", "deskripsi catemak jagung?"],
+          "responses": ["Catemak Jagung adalah makanan khas Nusa Tenggara Timur. Catemak jagung adalah makanan penutup yang terbuat dari jagung, labu lilin, dan kacang hijau yang dimasak dengan bumbu masak penyedap rasa. Tidak seperti warnanya yang manis seperti kolak, catemak rasanya asin."],
+          "context": [""]
+      },
+  {
+          "tag": "daun_singkong",
+          "patterns": ["apa itu daun singkong?", "deskripsi daun singkong", "daun singkong", "pengertian daun singkong" , "daun singkong itu apa?", "deskripsi daun singkong?"],
+          "responses": ["Daun singkong kaya akan vitamin, serat, dan protein. Sayuran ini mudah diolah menjadi beragam masakan lezat, menjadi urap misalnya. Urap daun singkong ini terbuat dari daun singkong, kelapa dan bahan-bahan dapur lainnya. Cara membuatnya yaitu Rebus daun singkong sampai empuk, angkat, peras, dan potong kasar, kemudian Tumis bumbu halus sampai matang. Masukkan kelapa parut, garam, dan gula merah. Aduk sampai matang dan Masukkan daun singkong dan tauge, aduk sebentar lalu angkat."],
+          "context": [""]
+      },
+  {
+          "tag": "kue_cucur",
+          "patterns": ["apa itu kue cucur?","apa itu cucur?", "deskripsi kue cucur","deskripsi cucur", "cucur","kue cucur", "pengertian kue cucur" ,"pengertian cucur", "kue cucur itu apa?", "deskripsi kue cucur?"],
+          "responses": ["Kue Cucur atau Cucur merupakan jajanan khas NTT. Kue ini terbuat dari tepung beras dan gula jawa atau gula aren yang digoreng. Kue Cucur memiliki bentuk yang cenderung tebal menggembung seperti gunung di bagian tengah dan tipis di bagian pinggirannya. Wikipedia"],
+          "context": [""]
+      },
+  {
+          "tag": "kompiang",
+          "patterns": ["apa itu kompiang?", "deskripsi kompiang", "kompiang", "pengertian kompiang" , "kompiang itu apa?", "deskripsi kompiang?"],
+          "responses": ["Kompiang adalah salah satu jajanan tradisional Indonesia sejenis roti atau kue. Kompia memiliki bentuk seperti roti penutup burger. Bagian atasnya didominasi oleh wijen dan bentuknya bulat. Kompia cocok untuk menjadi pendamping minuman susu seperti kopi, susu, teh dan lain-lain. Kompia memiliki tekstur yang keras di luar. Untuk itu, akan lebih nikmat bila dipadukan dengan minuman panas. Bahan dari kompia sendiri sederhana yaitu terdiri atas campuran tepung terigu, garam, gula, dan air. Walau bahannya sederhana, dibutuhkan proses pembuatan yang ulet agar dapat menciptakan jajanan ini. "],
+          "context": [""]
+      },
+  {
+          "tag": "bakpia",
+          "patterns": ["apa itu bakpia?", "apa itu kue pia?", "deskripsi bakpia", "bakpia", "pengertian bakpia" , "bakpia itu apa?", "deskripsi bakpia?"],
+          "responses": ["Bakpia atau masyarakat biasa menyebutnya dengan sebutan pia atau kue pia adalah salah satu makanan kue yang berbahan dasar tepung terigu, yang kemudian di campur dengan gula pasir dan margarin, dengan campuran ini nantinya akan dijadikan sebagai pembungkus kacang hijau campur gula yang ada di dalamnya, lalu kemudian di panggang di oven. "],
+          "context": [""]
+      },
+  {
+          "tag": "kue_kipo",
+          "patterns": ["apa itu kue kipo?", "deskripsi kue kipo", "kue kipo", "pengertian kue kipo" , "kue kipo itu apa?", "deskripsi kue kipo?"],
+          "responses": ["Kue kipo merupakan salah satu makanan tradisional asli khas yogyakarta. Kue kipo ini biasanya dapat kita temukan di pasar jajanan tradisional. Kue yang berbahan dasar ketan yang dicampur dengan adonan nangka, kelapa dan gula merah ini sudah menjadi kegemaran tersendiri khususnya bagi masyarakat yogya. Rasa manis tentunya sudah menjadi ciri khas dari kue kipo ini."],
+          "context": [""]
+      },
+  {
+          "tag": "peyek",
+          "patterns": ["apa itu peyek?", "deskripsi peyek", "peyek", "pengertian peyek" , "peyek itu apa?", "deskripsi peyek?"],
+          "responses": ["Peyek atau sering disebut rempeyek merupakan sejenis makanan pelengkap dari kelompok gorengan dan keripik. Secara umum, rempeyek adalah gorengan tepung beras yang dicampur dengan air hingga membentuk adonan kental, lalu ditambahkan bumbu seperti garam dan bawang putih, dan diberi bahan pengisi yang khas. Rempeyek biasanya menggunakan beberapa isian seperti biji kacang tanah, kacang kedelai, hingga daun bayam. Peran tepung di sini adalah sebagai pengikat."],
+          "context": [""]
+      },
+  {
+          "tag": "ayam_goreng_kalasan",
+          "patterns": ["apa itu ayam goreng kalasan?", "deskripsi ayam goreng kalasan", "ayam goreng kalasan", "pengertian ayam goreng kalasan" , "ayam goreng kalasan itu apa?", "deskripsi ayam goreng kalasan?"],
+          "responses": ["Ayam Goreng Kalasan merupakan olahan khas daging ayam yang digoreng dengan sajian sambal istimewa, serta dibumbuhi oleh bumbu dan rempah-rempah khusus ini berasal dari daerah Sleman, Yogyakarta yang wajib kita coba jika kita berkunjung ke DIY. Ayam Kalasan ini sangat menggugah selera karena rasa aslinya yang gurih, enak, lembut, dan sedikit manis karena dalam pengolahannya ditambahkan gula merah. Rasa khas dan gurih ayam kalasan memang berbeda dari olahan ayam lainnya dikarenakan daging ayam kalasan terlebih dahulu direbus dengan santan, campuran bumbu dan rempah-rempah lainnya, sehingga semua campuran santan dan bumbu tersebut akan meresap terlebih dahulu ke ayam dan ayam akan menjadi lebih manis dan renyah."],
+          "context": [""]
+      },
+  {
+          "tag": "geblek",
+          "patterns": ["apa itu geblek?", "deskripsi geblek", "geblek", "pengertian geblek" , "geblek itu apa?", "deskripsi geblek?"],
+          "responses": ["Geblek, makanan tradisional yang satu ini dibuat dari bahan tepung tapioka dengan bumbu bawang yang digoreng gurih. Bentuknya bulat atau menyerupai angka delapan (8), berwarna putih bersih dan diolah dengan cara digoreng. Makanan ini populer sebagai jajanan khas dari daerah Kabupaten Kulonprogo, Kabupaten Purworejo, dan Kabupaten Wonosobo. Masing-masing daerah memiliki citarasa unik. Geblek dapat dinikmati dengan dimakan langsung atau dengan campuran saus kacang."],
+          "context": [""]
+      },
+  {
+          "tag": "sayur_brongkos",
+          "patterns": ["apa itu sayur brongkos?", "deskripsi sayur brongkos", "sayur brongkos", "pengertian sayur brongkos" , "sayur brongkos itu apa?", "deskripsi sayur brongkos?"],
+          "responses": ["Sayur brongkos dalam kebiasaan orang Jawa biasa menyebutnya “Jangan Brongkos” merupakan jenis makanan olahan sayur yang sangat khas bagi masyarakat Jawa Khususya di Yogyakarta karena Sayur Brongkos ini adalah menu tradisional yang khas warisan leluhur masyarakat Yogyakarta. "],
+          "context": [""]
+      },
+  {
+          "tag": "cemplon",
+          "patterns": ["apa itu cemplon?", "deskripsi cemplon", "cemplon", "pengertian cemplon" , "cemplon itu apa?", "deskripsi cemplon?"],
+          "responses": ["Cemplon adalah camilan khas daerah Jogjakarta, makanan yang memiliki cita rasa manis dan legit ini selalu menggoyang lidah orang yang mencicipinya. Rasanya yang enak banyak membuat orang ketagihan saat mencicipinya. Cemplon  dibuat dari singkong/ketela yang diparut & diberi isian. Lalu dibentuk bulat dan digoreng dadakan."],
+          "context": [""]
+      },
+  {
+          "tag": "getuk_lindri",
+          "patterns": ["apa itu getuk lindri?", "deskripsi getuk lindri", "getuk lindri", "pengertian getuk lindri" , "getuk lindri itu apa?", "deskripsi getuk lindri?"],
+          "responses": ["Getuk (dalam bahasa Jawanya : gethuk) merupakan jajanan atau panganan ringan yang dibuat dari singkong yang dikupasa lalu dikukus hingga matang, selanjutnya dihaluskan dengan digiling atau ditumbuk dan diberi pewarna untuk makanan dan pemanis. Lalu getuk juga ditaburi parutan kelapa. Getuk yaitu panganan khas masyarakat Yogyakarta. Getuk lindri yaitu singkong yang sudah direbus digiling hingga halus dengan gula, lalu diberi vanili dan pewarna makanan lalu dicetak."],
+          "context": [""]
+      },
+  {
+          "tag": "jadah_manten",
+          "patterns": ["apa itu jadah manten?", "deskripsi jadah manten", "jadah manten", "pengertian jadah manten" , "jadah manten itu apa?", "deskripsi jadah manten?"],
+          "responses": ["Jadah manten merupakan makanan tradisional yang dibuat dengan bahan beras ketan. Jadah manten ini biasanya diisi dengan bahan isian berupa daging ayam atau sapi, untuk anda yang ingin membuatnya bisa menggunakan bahan isian yang sesuai dengan selera anda masing-masing. "],
+          "context": [""]
+      },
+  {
+          "tag": "sate_klatak",
+          "patterns": ["apa itu sate klatak?", "deskripsi sate klatak", "sate klatak", "pengertian sate klatak" , "sate klatak itu apa?", "deskripsi sate klatak?"],
+          "responses": ["Sate Klatak berbahan dasar daging kambing. Namun, sate jenis ini berbeda dengan sate kambing kebanyakan. Jika sate yang lainnya dimasak dengan bumbu yang beragam, sate klatak hanya dimasak dengan satu bumbu : garam. Tusuk Sate Klatak terbuat dari jeruji besi. Tusuk dari jeruji besi ini digunakan karena besi merupakan penghantar panas yang baik sehingga irisan daging sate yang berukuran besar bisa matang dengan sempurna di bagian dalamnya."],
+          "context": [""]
+      },
+  {
+          "tag": "kerak_telor",
+          "patterns": ["apa itu kerak telor?", "deskripsi kerak telor", "kerak telor", "pengertian kerak telor" , "kerak telor itu apa?", "deskripsi kerak telor?"],
+          "responses": ["Kerak telor merupakan salah satu makanan khas daerah Betawi. Makanan ini dibuat dari bahan-bahan antara lain seperti beras ketan putih, telur ayam atau telur bebek, ebi (udang kering) dan parutan kelapa yang disangrai kering, serta bawang goreng, cabai merah, kencur, jahe, merica, garam dan gula pasir sebagai bumbu pelengkapnya. Cara membuat makanan ini cukup unik karena tidak dimasak di atas kompor namun dimasak diatas bara api. Pedagang kerak telor sesekali membalikkan wajan agar permukaan dari kerak telor tersebut juga terpanggang dan matang merata sambil dikipas-kipas agar bara api tetap menyala. Setelah kering dan matang kerak telor siap untuk disajikan."],
+          "context": [""]
+      },
+  {
+          "tag": "ketoprak",
+          "patterns": ["apa itu ketoprak?", "deskripsi ketoprak", "ketoprak", "pengertian ketoprak" , "ketoprak itu apa?", "deskripsi ketoprak?"],
+          "responses": ["Ketoprak merupakan salah satu jajanan khas DKI Jakarta. Ketoprak terbuat dari ketupat atau lontong yang berisi bihun, toge, dan tahu. Ketoprak Betawi dengan rasa yang lezat ini disiram dan diaduk dengan sambal kacang. Ketoprak juga ditaburi dengan kerupuk. Makanan khas Betawi ini termasuk makanan berat yang agak ‘ringan’."],
+          "context": [""]
+      },
+  {
+          "tag": "asinan_betawi",
+          "patterns": ["apa itu asinan betawi?", "deskripsi asinan betawi", "asinan betawi", "pengertian asinan betawi" , "asinan betawi itu apa?", "deskripsi asinan betawi?"],
+          "responses": ["Asinan Betawi merupakan jajanan khas dari DKI Jakarta yang terbuat dari sayur-sayuran yang diasinkan (kol, sawi, wortel) lalu diberi bumbu kacang (saus kacang yang juga diberi cuka dan rasanya sedikit asin gurih manis), lalu ditaburi kerupuk kuning."],
+          "context": [""]
+      },
+  {
+          "tag": "gado_gado_betawi",
+          "patterns": ["apa itu gado-gado betawi?", "deskripsi gado-gado betawi", "gado-gado betawi", "pengertian gado-gado betawi" , "gado-gado betawi itu apa?", "deskripsi gado-gado betawi?"],
+          "responses": ["Gado-gado Betawi merupakan jajanan khas dari DKI Jakarta yang juga salah satu kuliner kebanggan Indonesia. Gado-gado ini berisi lontong/ketupat, sayuran, kerupuk, dan bawang goreng. Gado-gado cocok disajikan untuk santapan kapanpun."],
+          "context": [""]
+      },
+  {
+          "tag": "roti_buaya",
+          "patterns": ["apa itu roti buaya?", "deskripsi roti buaya", "roti buaya", "pengertian roti buaya" , "roti buaya itu apa?", "deskripsi roti buaya?"],
+          "responses": ["Roti Buaya merupakan jajanan khas dari DKI Jakarta yang terinspirasi dari kebiasaan buaya yang hanya kawin sekali sepanjang hidupnya. Roti ini memjadi simbol kesetian pasangan yang telah menikah bagi kalangan suku Betawi."],
+          "context": [""]
+      },
+  {
+          "tag": "pecak_lele",
+          "patterns": ["apa itu pecak lele?", "deskripsi pecak lele", "pecak lele", "pengertian pecak lele" , "pecak lele itu apa?", "deskripsi pecak lele?"],
+          "responses": ["Pecak Lele merupakan olahan khas Betawi. Ikan lele dibakar atau digoreng kemudian disiram  Kuah santan dengan bumbu cabai dan kemiri yang gurih. Daun Kemangi segar menjadi pelengkap pecak. Ada juga yang membuat pecak dengan menambahkan kacang tanah dan kacang mede halus didalamnya. Kacang ini memberi tekstur sekaligus cita rasa gurih pada pecak."],
+          "context": [""]
+      },
+  {
+          "tag": "lontong_sayur",
+          "patterns": ["apa itu lontong sayur?", "deskripsi lontong sayur", "lontong sayur", "pengertian lontong sayur" , "lontong sayur itu apa?", "deskripsi lontong sayur?"],
+          "responses": ["Lontong Sayur merupakan makanan khas dari DKI Jakarta yang terbuat dari lontong yang disajikan bersama dengan sayur berkuah santan yang didalamnya ada kacang panjang, labu, atau irisan pepaya muda. Lontong sayur juga kerap dijumpai pada saat hari raya lebaran."],
+          "context": [""]
+      },
+  {
+          "tag": "nasi_ulam",
+          "patterns": ["apa itu nasi ulam?", "deskripsi nasi ulam", "nasi ulam", "pengertian nasi ulam" , "nasi ulam itu apa?", "deskripsi nasi ulam?"],
+          "responses": ["Nasi ulam ini makanan Betawi yang merupakan nasi dicampur lauk pauk, misalnya kerupuk, semur tahu, pete bakar, tempe goreng, bihun goreng, kacang tanah goreng, lalapan ( ketimun, dain kemangi, kol, daun kencur) dan telur balado. Nasi ulam ini biasanya dibungkus dengan daun pisang, jadi baunya harum dan segar. Kekhasan nasi ulam ini ada pada taburannya, yaitu serundeng basah. Serundeng basah ini merupakan parutan kelapa yang dibumbui kencur, langkuas, gula, cabai, bawang merah, dan garam."],
+          "context": [""]
+      },
+  {
+          "tag": "bir_pletok",
+          "patterns": ["apa itu bir pletok?", "deskripsi bir pletok", "bir pletok", "pengertian bir pletok" , "bir pletok itu apa?", "deskripsi bir pletok?"],
+          "responses": ["Bir Pletok adalah minuman khas etnis Betawi. Minuman penyegar berwarna merah ini dibuat dari beberapa campuran rempah-rempah yaitu jahe, daun pandan wangi, dan serai. Bir ini Halal dan tidak mengandung alkohol."],
+          "context": [""]
+      },
+  {
+          "tag": "semur_jengkol",
+          "patterns": ["apa itu semur jengkol", "deskripsi semur jengkol", "semur jengkol", "pengertian semur jengkol" , "semur jengkol itu apa?", "deskripsi semur jengkol?"],
+          "responses": ["Semur jengkol adalah makanan khas Betawi yang dalam pembuatan semur jengkol, hal yang perlu diperhatikan adalah ketepatan bumbu untuk menghasilkan rasa semur jengkol yang pas dan menyatu dengan bahan-bahan bumbu."],
+          "context": [""]
+      }	
+  
+  
+  
+]		
+}

@@ -1,0 +1,359 @@
+<!-- --﷽-- -->
+
+<!DOCTYPE html>
+<html>
+</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoKuliner</title>
+      
+      <!--type="image/x-icon"
+      rel="shortcut icon"
+      href="./images/title-logo.png"-->
+    
+    
+    <link rel="preconnect" href=' https://fonts.googleapis.com'>
+   
+    <link rel="preconnect" href=' https://fonts.gstatic.com' crossorigin>
+   
+    <link href='https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@800;900&family=Gothic+A1:wght@200;400;500;700;900&family=Noto+Sans:wght@400;700&display=swap'rel="stylesheet"> rel="stylesheet">
+
+    <!-- ----linked style.css file---- -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+    <!-- ----linked media.css file---- -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/media.css')}}" />
+   
+  </head>
+  <body>
+    <!-- ====markup header element==== -->
+    <header class="header">
+      <!-- ---header logo--- -->
+      <div class="header-logo">
+        <img src="{{ url_for('static', filename='images/logo-img.png')}}" alt="logo" />
+      
+      </div>
+     
+      <!-- ---navigation--- -->
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a class="active" href="#beranda">Beranda</a>
+          </li>
+          <li>
+            <a href="#popular">KulinerBot</a>
+          </li>
+          <li>
+            <a href="#order">Food Place</a>
+          </li>
+          <li>
+            <!--<a href="#gallery">gallery</a>-->
+          </li>
+          <li>
+            <a href="#about">About Us</a>
+          <li>
+            <a href="#menu">Akun</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ---menu bar--- -->
+      <div id="menu-bar" class="fas fa-bars"></div>
+    </header>
+
+    <!-- ====markup main element==== -->
+
+    <main>
+      <!-- ====markup home section==== -->
+      <section id="home" class="home">
+        <div class="home-desc">
+          <h1>Yuk Kulineran dengan <span class="satu">GoKuliner</span></h1>
+          <p>
+            Chatbot pengenalan makanan khas nusantara sebagai asisten traveler di Indonesia.
+            Ayo tanya KulinerBot tentang makanan khas di tempat kamu sekarang.
+          </p>
+          
+        </div>
+
+        
+      </section>
+
+      
+       <!-- ====markup popular section==== -->
+       <section id="popular" class="popular">
+        <!--<h2>most <span>popular</span> foods</h2>-->
+        
+        <div class="popular-content">
+          <!-- ---card 01--- -->
+          <!--<div class="header-logo">
+            <img src="./images/logo-img.png" alt="logo" />
+            <button type="reset"><img src="images/bot.png"></button>
+          </div>-->
+          
+          
+          <div class="p-card">
+            <h4>KulinerBot </h4>
+            <div class="row">
+              <div class="col-lg-9">
+                <input class="form-control" type="text" name="question" id="question">
+              </div>
+              <div class="col-lg-3">
+                <button class="btn btn-primary btn-block" id="submit-button">Send</button>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col">
+                <p id="response"></p>
+              </div>
+            </div>
+            <!--<form action="#" class="pesan" autocomplete="off">
+              <input type="text" placeholder="Type your question" required />
+              <button type="submit"><img src="{{ url_for('static', filename='images/ikonsend2.png')}}"></button>
+            </form>-->
+          </div>
+
+          
+        </div>
+      </section> 
+   
+      <!-- ====markup order section==== -->
+      <section id="order" class="order">
+        <!--<h2>make an <span>order</span></h2>-->
+
+        <div class="order-content">
+          <form action="#" class="order-form" autocomplete="off">
+            <input type="text" placeholder="Ketikkan nama makanan" required />
+            <button type="submit">cari</button>
+          </form>
+          <!--<img src="./images/form-img.jpg" alt="Net Error" />-->
+        </div>
+      </section>
+
+      <!-- ====markup about section==== 
+      <section id="menu" class="menu">
+        <h2>our delicious <span>menu</span></h2>
+        <div class="catagory">
+          <input type="button" value="breakfast" />
+          <input type="button" class="active" value="lunch" />
+          <input type="button" value="dinner" />
+          <input type="button" value="desert" />
+        </div>
+
+        <div class="catagory-img">
+          <img id="c-img" src="./images/menu-lunch.jpg" alt="Net Error" />
+        </div>
+
+        ---info content 01--- 
+        <div class="menu-content">
+          <div class="info">
+            <h3><span>01.</span>we serve best food in the country</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+              perspiciatis.
+            </p>
+          </div>
+
+          ---info content 02--- 
+          <div class="info">
+            <h3><span>02.</span>we serve best food in the country</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+              perspiciatis.
+            </p>
+          </div>
+
+          <---info content 03--- 
+          <div class="info">
+            <h3><span>03.</span>we serve best food in the country</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+              perspiciatis.
+            </p>
+          </div>
+
+          <---info content 04--- 
+          <div class="info">
+            <h3><span>04.</span>we serve best food in the country</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+              perspiciatis.
+            </p>
+          </div>
+        </div>
+      </section>-->
+
+     
+
+      <!----====markup gallery section==== 
+      <section id="gallery" class="gallery">
+        <h2>our food <span>gallery</span></h2>--->
+
+        <!--<div class="gallery-content">
+           ---gallery card 01 
+          <div class="g-card">
+            <img src="./images/img1.jpg" alt="Net Error" />
+            <h3>delicious food</h3>
+          </div>-->
+
+          <!---gallery card 02--- 
+          <div class="g-card">
+            <img src="./images/img2.jpg" alt="Net Error" />
+            <h3>delicious food</h3>
+          </div>
+
+          ---gallery card 03--- 
+          <div class="g-card">
+            <img src="./images/img3.jpg" alt="Net Error" />
+            <h3>delicious food</h3>
+          </div>
+
+          ---gallery card 04--- 
+          <div class="g-card">
+            <img src="./images/img4.jpg" alt="Net Error" />
+            <h3>delicious food</h3>
+          </div>
+
+          ---gallery card 05--- 
+          <div class="g-card">
+            <img src="./images/img5.jpg" alt="Net Error" />
+            <h3>delicious food</h3>
+          </div>
+
+          ---gallery card 06--- 
+          <div class="g-card">
+            <img src="./images/img6.jpg" alt="Net Error" />
+            <h3>delicious food</h3>
+          </div>
+        </div>
+      </section>-->
+
+
+      
+       <!--====markup about section==== -->
+      <section id="about" class="about">   
+        <div class="about-desc">
+          <h2>Go Kuliner</h2>
+          <p>
+            Website pengenalan makanan khas Nusantara yang diharapkan dapat membantu para traveler untuk mengetahui 
+            makanan khas daerah yang mereka kunjungi di Indonesia. Selain untuk para traveler, website ini juga 
+            diperuntukkan kepada masyarakat setempat agar lebih mengenal makanan khas daerah masing-masing sebagai
+            bentuk usaha melestarikan makanan khas Nusantara.
+
+            Kalau bukan kita yang menjaga warisan budaya Indonesia, siapa lagi?
+          </p>
+        </div>
+        
+      </section>
+
+
+
+   
+
+
+    <!-- ====markup footer element==== 
+    <section id="about" class="about"></section>-->
+    <footer class="footer">
+      
+      <div class="location">
+        <h2>About Go Kuliner</h2>
+        <p>
+          Website pengenalan makanan khas Nusantara yang diharapkan dapat membantu para traveler untuk mengetahui 
+          makanan khas daerah yang mereka kunjungi di Indonesia. Selain untuk para traveler, website ini juga 
+          diperuntukkan kepada masyarakat setempat agar lebih mengenal makanan khas daerah masing-masing sebagai
+          bentuk usaha melestarikan makanan khas Nusantara.
+
+          Kalau bukan kita yang menjaga warisan budaya Indonesia, siapa lagi?
+        </p>
+      </div>
+      <!--<div class="quick-links">
+        <h4>quick links</h4>
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#menu">menu</a></li>
+          <li><a href="#popular">popular</a></li>
+          <li><a href="#gallery">gallery</a></li>
+          <li><a href="#order">order</a></li>
+        </ul>
+      </div> -->
+      <div class="contact-info">
+        <h4>contact info</h4>
+        <p>
+          <i class="fas fa-location-dot"></i
+          ><span>abc, defgh.</span>
+        </p>
+        <p><i class="fas fa-envelope"></i> <span>foodweb33@gmail.com</span></p>
+        <p><i class="fas fa-phone"></i> <span>+977 9843543534</span></p>
+        <p><i class="fas fa-phone"></i> <span>+061-454676</span></p>
+      </div>
+
+
+      <div class="follow-us">
+        <h4>follow us</h4>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com" target="blank">facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="blank">instagram</a>
+          </li>
+          <li><a href="https://www.twitter.com" target="blank">twitter</a></li>
+          <li>
+            <a href="https://www.linkedin.com" target="blank">linkedin</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright 2022 || &copy all right reserved.</p>
+      </div>
+    </footer>
+  </section>
+</main>
+
+    <!-- ----linked main.js file---- -->
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+    <script src="{{ url_for('static', filename='jquery.min.js')}}" ></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <script>
+
+
+      jQuery(document).ready(function() {
+
+        $("#submit-button").click(function(e) {
+          e.preventDefault();
+
+
+          $.ajax({
+              type: "POST",
+              url: "/chatbot",
+              data: {
+                  question: $("#question").val()
+              },
+              success: function(result) {
+                $("#response").append("<br>Me: "+$("#question").val()+ "<br> Karabo: "+result.response);
+                $("#question").val("")
+              },
+              error: function(result) {
+                  alert('error');
+              }
+          });
+
+
+
+        });
+
+      });
+
+
+    </script>
+  </body>
+</html>
+
